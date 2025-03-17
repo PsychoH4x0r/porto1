@@ -1,0 +1,135 @@
+/* Media Queries untuk Responsivitas */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+     .about-content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center text */
+    }
+      .profile-image-container {
+        margin: 0 auto 30px; /* Center the image and add bottom margin */
+    }
+     .skill-card {
+        padding: 20px; /* Reduce padding */
+    }
+
+     .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust grid */
+    }
+    .project-details {
+        padding: 20px; /* Reduce padding */
+    }
+
+    #navbar .nav-links {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9); /* Dark background */
+        text-align: center;
+
+    }
+    #navbar.active .nav-links{
+      display: flex;
+
+    }
+
+    #navbar .nav-links li {
+        display: block; /* Stack links vertically */
+        margin: 10px 0;
+
+    }
+      #navbar .nav-link {
+        padding: 15px; /* Larger padding */
+        display: block;
+        width: 100%;
+    }
+
+    .burger {
+        display: flex; /* Show burger menu */
+    }
+      /* Burger menu animation */
+    #navbar.active .burger div:nth-child(1) {
+        transform: rotate(-45deg) translate(-6px, 6px);
+    }
+
+    #navbar.active .burger div:nth-child(2) {
+        opacity: 0;
+    }
+
+    #navbar.active .burger div:nth-child(3) {
+        transform: rotate(45deg) translate(-6px, -6px);
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem; /* Smaller title */
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem; /* Smaller subtitle */
+    }
+
+    .skill-icon {
+        font-size: 2.5rem; /* Smaller icons */
+    }
+
+    .skill-title {
+        font-size: 1.5rem; /* Smaller titles */
+    }
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column */
+    }
+
+    .project-details {
+        position: fixed; /* Fix position */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        transform: scale(0); /* Initially hidden */
+        padding: 20px;
+        border-radius: 0; /* No rounded corners */
+        overflow-y: auto; /* Scrollable */
+        z-index: 1001; /* Above other content */
+    }
+
+    .project-details.active{
+      transform: scale(1);
+    }
+     .project-close-btn {
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+    }
+      .contact-form {
+        padding: 0 15px; /* Add padding */
+    }
+    .footer {
+    padding: 20px 0; /* Reduce padding */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+
+}

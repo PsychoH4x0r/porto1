@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown1337 - Music</title>
+    <meta name="description" content="Music collection of Unknown1337, featuring cyberpunk and electronic tracks.">
+    <meta name="keywords" content="cybersecurity, bug hunting, linux, portfolio, cyberpunk, 2090, hacking, web development, ethical hacking, music">
+    <meta name="author" content="Unknown1337">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="background-container">
+        <div class="cyber-grid"></div>
+        <div class="cyber-particles"></div>
+        <div class="glass-reflection"></div>
+        <div class="glass-panel"></div>
+        <div class="glass-highlights"></div>
+    </div>
+
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="container">
+                <a href="index.html" class="logo neon-text">Back</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section id="music" class="music-section" style="padding: 100px 0; position: relative; background: rgba(0, 0, 0, 0.7); min-height: 100vh; z-index: 1;">
+            <div class="container">
+                <h2 class="section-title neon-text" style="font-size: 4rem; text-align: center; margin-bottom: 50px; color: #fff; text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2; animation: neonPulse 2s infinite;">MY MUSIC</h2>
+                <div class="music-container">
+                    <div class="music-box">
+                        <div class="music-item">
+                            <audio id="music1" src="https://j.top4top.io/m_3362wff9o1.mp3"></audio>
+                            <button class="music-btn cyberpunk-btn" onclick="togglePlay('music1')">
+                                <span class="btn-glitch"></span>
+                                <span class="btn-line"></span>
+                                <i class="fas fa-play"></i>
+                                <span class="btn-text">Memory Reboot Mix</span>
+                            </button>
+                            <div class="music-visualizer">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="music-item">
+                            <audio id="music2" src="https://e.top4top.io/m_3362v703b1.mp3"></audio>
+                            <button class="music-btn cyberpunk-btn" onclick="togglePlay('music2')">
+                                <span class="btn-glitch"></span>
+                                <span class="btn-line"></span>
+                                <i class="fas fa-play"></i>
+                                <span class="btn-text">The Lost Soul Down</span>
+                            </button>
+                            <div class="music-visualizer">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="music-item">
+                            <audio id="music3" src="https://l.top4top.io/m_3362bklth1.mp3"></audio>
+                            <button class="music-btn cyberpunk-btn" onclick="togglePlay('music3')">
+                                <span class="btn-glitch"></span>
+                                <span class="btn-line"></span>
+                                <i class="fas fa-play"></i>
+                                <span class="btn-text">You LOOK lonely</span>
+                            </button>
+                            <div class="music-visualizer">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="music-item">
+                            <audio id="music4" src="https://i.top4top.io/m_3362tamuh1.mp3"></audio>
+                            <button class="music-btn cyberpunk-btn" onclick="togglePlay('music4')">
+                                <span class="btn-glitch"></span>
+                                <span class="btn-line"></span>
+                                <i class="fas fa-play"></i>
+                                <span class="btn-text">Dark Beach</span>
+                            </button>
+                            <div class="music-visualizer">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div class="music-item">
+                            <audio id="music5" src="https://a.top4top.io/m_3362k2zl91.mp3"></audio>
+                            <button class="music-btn cyberpunk-btn" onclick="togglePlay('music5')">
+                                <span class="btn-glitch"></span>
+                                <span class="btn-line"></span>
+                                <i class="fas fa-play"></i>
+                                <span class="btn-text">Crimewave</span>
+                            </button>
+                            <div class="music-visualizer">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2090 Unknown1337. All rights reserved. Built for the digital frontier.</p>
+        </div>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/music-player.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html> 

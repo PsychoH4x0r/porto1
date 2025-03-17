@@ -1,0 +1,74 @@
+/* contact.css */
+
+.contact {
+    background-color: #0a0a0a; /* Sedikit lebih terang dari background utama */
+    color: #fff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.contact-description{
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    opacity: 0.8;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #0cc;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 204, 204, 0.2); /* Glow yang halus */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Rata kiri untuk label dan input */
+}
+
+.form-label {
+    display: block; /* Agar label berada di atas input */
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08); /* Transparan */
+    color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none; /* Hapus outline bawaan */
+    font-family: inherit; /* Mengikuti font utama */
+
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #0cc;
+    box-shadow: 0 0 10px rgba(0, 204, 204, 0.5); /* Glow saat fokus */
+}
+
+.form-textarea {
+    resize: vertical; /* Hanya bisa di-resize secara vertikal */
+}
+
+/* Pesan Status Formulir */
+#form-message {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#form-message.success {
+    color: #0cc; /* Cyan untuk sukses */
+}
+
+#form-message.error {
+    color: #ff4136; /* Merah untuk error */
+}

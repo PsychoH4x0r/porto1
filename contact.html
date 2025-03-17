@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown1337 - Contact</title>
+    <meta name="description" content="Contact Unknown1337 - Cybersecurity Expert, Bug Hunter, and Linux Architect">
+    <meta name="keywords" content="contact, cybersecurity, bug hunting, linux, portfolio">
+    <meta name="author" content="Unknown1337">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/modern.css">
+    <link rel="stylesheet" href="assets/css/blackhat.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="background-container">
+        <div class="cyber-grid"></div>
+        <div class="cyber-particles"></div>
+        <div class="glass-reflection"></div>
+        <div class="glass-panel"></div>
+        <div class="glass-highlights"></div>
+    </div>
+
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="container">
+                <a href="index.html" class="logo neon-text">Back</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section id="contact" class="contact motion-blur">
+            <div class="container">
+                <h2 class="section-title glitch-text" data-text="Contact Me">Contact Me</h2>
+                <div class="contact-terminal motion-blur">
+                    <div class="terminal-header">
+                        <div class="terminal-title">
+                            <i class="fas fa-terminal"></i>
+                            <span>Contact Terminal</span>
+                        </div>
+                        <div class="terminal-controls">
+                            <button class="terminal-btn close"></button>
+                            <button class="terminal-btn minimize"></button>
+                            <button class="terminal-btn maximize"></button>
+                        </div>
+                    </div>
+                    <div class="terminal-content">
+                        <div class="terminal-welcome">
+                            <p>Welcome to the contact terminal. Please fill in the details below to establish a secure connection.</p>
+                        </div>
+                        <form class="terminal-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">$ ./name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">$ ./email</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">$ ./message</label>
+                                <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="terminal-submit">$ ./send_message.sh</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="message-display" id="messageDisplay"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Unknown1337. All rights reserved. Built for the digital frontier.</p>
+        </div>
+    </footer>
+
+    <div class="cursor"></div>
+
+    <script src="assets/js/utils.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageDisplay = document.getElementById('messageDisplay');
+            messageDisplay.textContent = 'Message sent successfully!';
+            messageDisplay.className = 'message-display success show';
+            setTimeout(() => {
+                messageDisplay.className = 'message-display';
+            }, 3000);
+            this.reset();
+        });
+    </script>
+</body>
+</html> 

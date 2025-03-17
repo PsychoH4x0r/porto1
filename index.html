@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unknown1337 - Home</title>
+    <meta name="description" content="Welcome to Unknown1337's portfolio - Cybersecurity Expert, Bug Hunter, and Linux Architect in the year 2090.">
+    <meta name="keywords" content="cybersecurity, bug hunting, linux, portfolio, cyberpunk, 2090, hacking, web development, ethical hacking">
+    <meta name="author" content="Unknown1337">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/modern.css">
+    <link rel="stylesheet" href="assets/css/blackhat.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="background-container">
+        <div class="cyber-grid"></div>
+        <div class="cyber-particles"></div>
+        <div class="glass-reflection"></div>
+        <div class="glass-panel"></div>
+        <div class="glass-highlights"></div>
+    </div>
+
+    <div class="navbar-wrapper">
+        <nav id="navbar">
+            <div class="container">
+                <a href="index.html" class="logo text">Home</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title glitch-text">Unknown1337</h1>
+                    <p class="hero-subtitle">Cybersecurity Expert | Bug Hunter | Linux Architect</p>
+                    <div class="hero-buttons">
+                        <a href="about.html" class="btn neon-btn">Learn More</a>
+                        <a href="contact.html" class="btn neon-btn">Contact Me</a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <div class="container">
+                <h2 class="section-title neon-text">Featured Sections</h2>
+                <div class="featured-grid">
+                    <a href="about.html" class="featured-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>About Me</h3>
+                        <p>Learn about my journey in cybersecurity</p>
+                    </a>
+                    <a href="skills.html" class="featured-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Skills</h3>
+                        <p>Explore my technical expertise</p>
+                    </a>
+                    <a href="projects.html" class="featured-card">
+                        <div class="card-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Projects</h3>
+                        <p>View my latest cybersecurity projects</p>
+                    </a>
+                    <a href="contact.html" class="featured-card">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>Get in touch with me</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="latest" class="latest">
+            <div class="container">
+                <h2 class="section-title glitch-text" data-text="Latest Updates">Latest Updates</h2>
+                <div class="latest-grid">
+                    <div class="update-card">
+                        <div class="update-date">2025-01-15</div>
+                        <h3>New Security Tool Released</h3>
+                        <p>Check out my latest network security tool on GitHub</p>
+                        <a href="projects.html" class="btn neon-btn">View Project</a>
+                    </div>
+                    <div class="update-card">
+                        <div class="update-date">2025-03-10</div>
+                        <h3>Bug Bounty Achievement</h3>
+                        <p>Successfully identified critical vulnerabilities</p>
+                        <a href="about.html" class="btn neon-btn">Read More</a>
+                    </div>
+                    <div class="update-card">
+                        <div class="update-date">2025</div>
+                        <h3>Linux Security</h3>
+                        <p>Conducted advanced Linux security training for security </p>
+                        <a href="skills.html" class="btn neon-btn">Learn More</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Unknown1337. All rights reserved. Built for the digital frontier.</p>
+    </div>
+</footer>
+
+<div class="cursor"></div>
+
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/animations.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.navbar-toggler');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  menuBtn.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Menutup menu saat link diklik
+  const menuLinks = document.querySelectorAll('.mobile-menu a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      menuBtn.classList.remove('active');
+    });
+  });
+});
+</script>
+</body>
+</html>
